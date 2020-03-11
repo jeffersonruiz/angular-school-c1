@@ -13,12 +13,21 @@ export class HelloComponent{
     @Input() name:string;
     @Output() sayHello:EventEmitter<string> = new EventEmitter<string>();
 
+    public nameList:Array<string> = [];
+    public inputName:string;
+
     constructor(){
         
     }
 
     onNameClick(){
         this.sayHello.emit('Hello 2!');
+    }
+
+    addName(){
+        this.nameList.push(this.inputName);
+        this.inputName = ' ';
+        console.log(this.nameList);
     }
 
 }
