@@ -14,7 +14,7 @@ export class HelloComponent{
     @Output() sayHello:EventEmitter<string> = new EventEmitter<string>();
 
     public nameList:Array<string> = [];
-    public inputName:string;
+    public inputName:string = '';
 
     constructor(){
         
@@ -26,7 +26,7 @@ export class HelloComponent{
 
     addName(){
         this.nameList.push(this.inputName);
-        this.inputName = ' ';
+        this.inputName = '';
         console.log(this.nameList);
     }
 
