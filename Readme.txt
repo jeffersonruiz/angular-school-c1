@@ -1,3 +1,3 @@
 Clase:
 
-21. 1.14 - Reutilizando componentes
+28. 1.20 - Introducción a las pipes
