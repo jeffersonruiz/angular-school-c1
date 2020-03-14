@@ -1,3 +1,3 @@
 Clase:
 
-28. 1.20 - Introducción a las pipes
+32. 1.24 - Inspector, bundles y tree-shaking de dependencias

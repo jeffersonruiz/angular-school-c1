@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { GreetingsService } from "./greetings.service";
+
 
 @Component({
   selector: 'app-root',
@@ -9,12 +11,14 @@ export class AppComponent {
 
   public myName:string = "Farid";
   public titleStyles:{};
-  public counter = 0;
+
+  constructor(private greetings:GreetingsService){
+
+  }
 
   onSayHello(message){
 
-    console.log(message);
-    this.counter++;
+    this.greetings.handleGreetins(message);
     this.updateTitleStyles();
 
   }
@@ -32,7 +36,7 @@ export class AppComponent {
   updateTitleStyles(){
     this.titleStyles = {
       'margin-top' : '40px',
-      'color' : this.counter < 3 ? 'green' : 'blue'
+      'color' : this.greetings.counter < 3 ? 'green' : 'blue'
     }
   }
 

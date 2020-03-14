@@ -16,5 +16,5 @@
 </div>
 
 <p *ngFor="let item of nameList; index as i" (click)="onNameClick()">
-    {{i}} - Hello {{item}} !!
+    {{i}} - Hello {{ item | upperCapital }} !!
 </p>
