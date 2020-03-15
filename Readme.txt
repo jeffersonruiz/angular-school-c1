@@ -1,3 +1,3 @@
 Clase:
 
-32. 1.24 - Inspector, bundles y tree-shaking de dependencias
+34. 2.a - Código fuente
